@@ -1,4 +1,2 @@
 # GameRoulette
-<div style="border-radius: 50px;">
-<img src = "img/Превью.png" ></img>
-</div>
+<img src = "img/Превью.png" style="border-radius: 10px;"></img>
