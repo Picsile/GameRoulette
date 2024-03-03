@@ -1,0 +1,270 @@
+body {
+    background-color: rgb(84, 84, 84);
+    
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    background-color: white;
+    border-radius: 7px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#welcome1,
+#welcome2 {  
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    font-size: 40px;
+    line-height: 75px;
+    width: auto;
+    height: 80px;
+    background-color: rgb(57, 57, 57);
+    color:white;
+    border: dashed white 2px;
+    margin-top: 20px;
+}
+
+#form {
+    text-align: center;
+    font-size: 35px;
+    width: 380px;
+    height: 250px;
+    color: white;
+    background-color: rgb(57, 57, 57);
+    border-radius: 30px;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form p {
+    padding-top: 40px;
+}
+
+#form input {
+    text-align: center;
+    font-size: 25px;
+    width: 300px;
+    height: 45px;
+    border: solid rgb(84, 84, 84) 2px;
+    border-radius: 5px;
+    margin-top:20px;
+}
+
+#form button {
+    font-size: 25px;
+    width: 300px;
+    height: 45px;
+    background-color: rgb(85, 125, 255);
+    color: white;
+    height: 45px;
+    border: solid rgb(84, 84, 84) 2px;
+    border-radius: 5px;
+    margin-top:20px;
+    
+}
+
+#form button:hover {
+    animation-name: myAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes myAnimation {
+    from {
+        box-shadow: 0px 0px 1px black;
+    }
+
+    to {
+        box-shadow: 3px 3px 1px rgb(183, 183, 183),
+     3px -3px 1px rgb(183, 183, 183),     
+     -3px 3px 1px rgb(183, 183, 183),
+     -3px -3px 1px rgb(183, 183, 183),
+     6px 6px 1px grey,
+     6px -6px 1px grey,
+     -6px 6px 1px grey,
+     -6px -6px 1px grey;
+    }
+}
+
+#container {
+    display: none;
+    position: relative;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.game_and_result {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game, .result {
+    background-color: rgb(57, 57, 57);
+    border-radius: 30px;
+    padding: 30px;
+    margin-top: 7%;
+}
+
+.result {
+    color: white;
+    font-size: 30px;
+    padding-left: 60px;
+    padding-bottom: 0px;
+    margin-top: 4%;
+}
+
+.light {
+    width: 220px;
+    height: 40px;
+    background-color: red;
+    border: solid white 3px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.slots {
+    display: flex;
+    justify-content: space-between;
+    width: 930px;
+    height: 350px;
+}
+
+.slot {
+    width: 290px;
+    height: 290px;
+    background-color: rgb(255, 204, 0);
+    border-radius: 12px;
+    padding-top: 10px;
+}
+
+.frame {
+    width: 270px;
+    height: 270px;
+    background-color: white;
+    border-radius: 7px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttonRun {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+#button {
+    font-size: 30px;
+    color: white;
+    width: 800px;
+    height: 50px;
+    background-color: rgb(85, 125, 255); 
+    border:0px;
+    border-radius: 10px;
+}
+
+#historyText {
+    display: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;  
+    color: rgb(175, 175, 175);
+    margin-top: 20px;
+}
+
+#history {
+    display: flex;
+    line-height: 1.5;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: rgb(175, 175, 175);
+    padding-bottom: 15px;
+    margin-top: 15px;
+}
+
+.ad1 {
+    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+
+    width: 312px;
+    height: 96vh;
+    background-color: rgb(57, 57, 57);
+    border-radius: 15px;
+    margin: 1% 0 0 1%;
+}
+
+.ad2 {
+    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+
+    width: 312px;
+    height: 95vh;
+    background-color: rgb(57, 57, 57);
+    border-radius: 15px;
+    margin: 1% 1% 0 0;
+}
+
+/* Прощание перед уходом */
+
+#exitFon {
+    display: none;
+    position: absolute; 
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 50%;
+}
+
+#exit {
+    display: none;
+    position: absolute;
+    z-index: 20;
+    top: 8%;
+    min-width: 600px;
+    height: 300px;
+    text-align: center;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#close {
+    position: absolute;
+    z-index: 30;
+    right: 15px;
+}
+
+#exitText {
+    margin-top: 30px;
+}
