@@ -1,2 +1,2 @@
 # GameRoulette
-Casino roulette with programming languages
+<img src = "img/Превью.png"></img>
